@@ -1,26 +1,24 @@
 #include <iostream>
 #include "html/lexer.h"
+#include "html/parser.h"
 
 int main() {
-    std::cout << "-- Weaver Web Engine --" << std::endl;
+    std::cout << "--  Weaver Web Engine --" << std::endl;
 
-    // This is the raw HTML your browser receives from the internet
+    // Raw HTML from the internet
     std::string html = "<html><body><h1>Hello World</h1><p>This is my browser.</p></body></html>";
     
+    // Tokenizing
     Lexer lexer(html);
     std::vector<Token> tokens = lexer.tokenize();
 
-    std::cout << "Tokens parsed:" << std::endl;
-    for (const auto& token : tokens) {
-        std::string type_str = "";
-        switch (token.type) {
-            case TokenType::TEXT: type_str = "TEXT"; break;
-            case TokenType::START_TAG: type_str = "START_TAG"; break;
-            case TokenType::END_TAG: type_str = "END_TAG"; break;
-            case TokenType::EOF_TOKEN: type_str = "EOF"; break;
-        }
-        std::cout << "[" << type_str << "] " << token.value << std::endl;
-    }
+    // Parse
+    Parser parser(tokens);
+    std::unique_ptr<ElementNode> dom_tree = parser.parse();
+
+    // Printing the tree
+    std::cout << "\n--- DOM Tree Generated ---" << std::endl;
+    dom_tree->print(0);
 
     return 0;
 }

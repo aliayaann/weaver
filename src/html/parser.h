@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
 #include <memory>
+#include <map>
+#include <utility>
 #include "lexer.h"
 #include "dom.h"
 
@@ -13,6 +15,6 @@ private:
     std::vector<Token> tokens;
     size_t pos = 0;
     
-    // Helper to strip attributes off tags (e.g. "div class='x'" -> "div")
-    std::string extract_tag_name(const std::string& raw_tag); 
+    // NEW: Returns both the tag name AND a map of attributes
+    std::pair<std::string, std::map<std::string, std::string>> parse_tag(const std::string& raw_tag);
 };

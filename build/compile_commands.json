@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/aliay/Documents/weaver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\mybrowser.dir\\src\\main.cpp.obj -c C:\\Users\\aliay\\Documents\\weaver\\src\\main.cpp",
+  "file": "C:/Users/aliay/Documents/weaver/src/main.cpp",
+  "output": "CMakeFiles/mybrowser.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/aliay/Documents/weaver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\mybrowser.dir\\src\\html\\lexer.cpp.obj -c C:\\Users\\aliay\\Documents\\weaver\\src\\html\\lexer.cpp",
+  "file": "C:/Users/aliay/Documents/weaver/src/html/lexer.cpp",
+  "output": "CMakeFiles/mybrowser.dir/src/html/lexer.cpp.obj"
+},
+{
+  "directory": "C:/Users/aliay/Documents/weaver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\mybrowser.dir\\src\\html\\parser.cpp.obj -c C:\\Users\\aliay\\Documents\\weaver\\src\\html\\parser.cpp",
+  "file": "C:/Users/aliay/Documents/weaver/src/html/parser.cpp",
+  "output": "CMakeFiles/mybrowser.dir/src/html/parser.cpp.obj"
+}
+]

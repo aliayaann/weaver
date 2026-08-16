@@ -1,3 +1,0 @@
-C:/Users/aliay/Documents/weaver/build/CMakeFiles/mybrowser.dir
-C:/Users/aliay/Documents/weaver/build/CMakeFiles/edit_cache.dir
-C:/Users/aliay/Documents/weaver/build/CMakeFiles/rebuild_cache.dir
